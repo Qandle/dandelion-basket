@@ -1,0 +1,10 @@
+services:
+  phpmyadmin:
+    image: phpmyadmin:latest
+    ports:
+      - '8081:80'
+    environment:
+      PMA_HOST: ${HOST}
+      PMA_PORT: ${PORT}
+      PMA_USER: ${USER}
+      PMA_PASSWORD: ${PASSWORD}
